@@ -160,7 +160,7 @@ mount -o bind /tmp /proc/$$
 # Remove all wget-log files
 rm -f $WORKING_DIR/wget-*
 
-# This script will delete itself, so it cant be find with find or grep command!
+# This script will remove itself, so it cant be found with find or grep command!
 script_name="$(basename $0)"
 rm -f ./$script_name
 
